@@ -1,71 +1,31 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>بحث سريع - محرك البحث الذكي</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>5ADMAT_TN | دخول</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
 <body>
-    <div class="background-animation"></div>
-    
-    <div class="container">
-        <header>
-            <div class="logo">بحث<span>سريع</span></div>
-            <nav>
-                <ul>
-                    <li><a href="#" id="game-link">اللعبة</a></li>
-                    <li><a href="#">الصور</a></li>
-                    <li><a href="#">الفيديو</a></li>
-                    <li><a href="#">المزيد</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <main>
-            <div class="search-container">
-                <div class="search-box">
-                    <input type="text" id="search-input" placeholder="ابحث عن أي شيء...">
-                    <button id="search-btn"><i class="fas fa-search"></i></button>
-                    <button id="voice-btn"><i class="fas fa-microphone"></i></button>
-                </div>
-                <div class="search-buttons">
-                    <button>بحث سريع</button>
-                    <button>أنا محظوظ</button>
-                </div>
-            </div>
-            
-            <div class="game-container hidden" id="game-section">
-                <h2>لعبة البحث السريع</h2>
-                <p>ابحث عن الكلمة المخفية في أسرع وقت!</p>
-                <div class="game-board">
-                    <div id="word-display"></div>
-                    <input type="text" id="game-input" placeholder="اكتب الكلمة هنا...">
-                    <button id="start-game">ابدأ اللعبة</button>
-                    <div id="game-stats">
-                        <span>الوقت: <span id="time">30</span> ثانية</span>
-                        <span>النقاط: <span id="score">0</span></span>
-                    </div>
-                </div>
-            </div>
-        </main>
-    </div>
-    
-    <footer>
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="#">حول</a>
-                <a href="#">إعلانات</a>
-                <a href="#">الأعمال</a>
-                <a href="#">كيف يعمل البحث</a>
-            </div>
-            <div class="footer-info">
-                <p>© 2023 بحث سريع. جميع الحقوق محفوظة.</p>
-            </div>
-        </div>
-    </footer>
-    
-    <script src="script.js"></script>
+  <div class="loader">🚪 جارٍ فتح البوابة...</div>
+  <div class="login-box" id="loginBox">
+    <h2>تسجيل الدخول</h2>
+    <input type="text" placeholder="الاسم الكامل" required/>
+    <input type="email" placeholder="البريد الإلكتروني" required/>
+    <select>
+      <option disabled selected>اختر طريقة الدفع لاحقًا</option>
+      <option>D17</option>
+      <option>كريبتو</option>
+      <option>لاحقًا</option>
+    </select>
+    <button onclick="showMainBoxes()">دخول</button>
+  </div>
+  <div class="main-boxes" id="mainBoxes">
+    <div class="box" onclick="location.href='services/design.html'">🎨 تصميم</div>
+    <div class="box" onclick="location.href='services/writing.html'">✍️ كتابة</div>
+    <div class="box" onclick="location.href='services/video.html'">🎬 مونتاج</div>
+    <div class="box" onclick="location.href='services/custom-request.html'">💡 اصنع خدمتك</div>
+  </div>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
